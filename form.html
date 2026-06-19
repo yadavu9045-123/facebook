@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body{
+            background-color: deepskyblue;
+            font-family: Arial;
+        }
+
+        table{
+            background-color: pink;
+            margin: auto;
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid gray;
+            padding: 25px;
+        }
+
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>REGISTRATION FORM</h2>
+
+<form>
+<table>
+
+<tr>
+    <td><b>First Name</b></td>
+    <td><input type="text" placeholder="Your First Name Here"></td>
+</tr>
+
+<tr>
+    <td><b>Last Name</b></td>
+    <td><input type="text" value="Aditya"></td>
+</tr>
+
+<tr>
+    <td><b>Email</b></td>
+    <td><input type="email"></td>
+</tr>
+
+<tr>
+    <td><b>Password</b></td>
+    <td><input type="password"></td>
+</tr>
+
+<tr>
+    <td><b>Gender</b></td>
+    <td>
+        <input type="radio" name="g"> Male
+        <input type="radio" name="g"> Female
+    </td>
+</tr>
+
+<tr>
+    <td><b>Highest Qualification</b></td>
+    <td>
+        <input type="radio" name="q"> 10th
+        <input type="radio" name="q"> 12th
+        <input type="radio" name="q"> BCA
+    </td>
+</tr>
+
+<tr>
+    <td><b>Skills</b></td>
+    <td>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JS
+    </td>
+</tr>
+
+<tr>
+    <td><b>City</b></td>
+    <td>
+        <select>
+            <option>----- Select City -----</option>
+            <option>Delhi</option>
+            <option>Meerut</option>
+            <option>Noida</option>
+            <option>Ghaziabad</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><b>DOB</b></td>
+    <td>
+        <input type="date">
+    </td>
+</tr>
+
+<tr>
+    <td><b>Select Range</b></td>
+    <td>
+        <input type="range">
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="submit" value="Submit">
+    </td>
+    <td>
+        <input type="reset" value="Reset">
+    </td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>
