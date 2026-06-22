@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Navbar */
+
+nav{
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:8px;
+    transition:0.4s;
+}
+
+nav ul li a:hover{
+    background:#00aaff;
+    transform:scale(1.1);
+}
+
+/* Banner */
+
+.banner{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+    background:linear-gradient(
+    -45deg,
+    #0077ff,
+    #00ccff,
+    #7b2cff,
+    #ff0080);
+
+    background-size:400% 400%;
+    animation:gradient 8s ease infinite;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.banner h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:white;
+    color:#0077ff;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* About */
+
+.about{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    padding:80px 50px;
+    background:white;
+}
+
+.photo img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #00aaff;
+    box-shadow:0 0 25px rgba(0,170,255,.5);
+    transition:.5s;
+}
+
+.photo img:hover{
+    transform:scale(1.08) rotate(-5deg);
+}
+
+.text{
+    width:500px;
+}
+
+.text h2{
+    margin-bottom:15px;
+    color:#0077ff;
+}
+
+/* Skills */
+
+.skills{
+    padding:80px;
+    text-align:center;
+}
+
+.skills h2{
+    margin-bottom:30px;
+}
+
+.skill-box{
+    display:inline-block;
+    background:#0077ff;
+    color:white;
+    margin:10px;
+    padding:15px 30px;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.skill-box:hover{
+    transform:translateY(-10px) scale(1.1);
+    background:#ff6600;
+}
+
+/* Projects */
+
+.projects{
+    background:white;
+    padding:80px;
+    text-align:center;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    width:300px;
+    background:#f1f1f1;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 0 25px gray;
+}
+
+.project-card img{
+    width:100%;
+}
+
+.project-card h3{
+    margin:15px;
+}
+
+.project-card a{
+    display:inline-block;
+    margin-bottom:20px;
+    background:#0077ff;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+    padding:80px;
+}
+
+.contact p{
+    margin:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
