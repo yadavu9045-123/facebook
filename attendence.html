@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Attendance Sheet</title>
+<link rel="stylesheet" href="attendence.css">
+</head>
+
+<body>
+
+<h1>Disha Institute Attendance Sheet (10 Students)</h1>
+
+<button onclick="calculate()">Calculate Attendance</button>
+
+<table id="sheet">
+<thead>
+<tr>
+<th>S.N</th>
+<th>Reg No</th>
+<th>Name</th>
+<th>Course</th>
+
+<!-- Days 1 to 31 -->
+<script> 
+for(let i=1;i<=10;i++){
+    document.write("<th>"+i+"</th>");
+}
+</script>
+
+<th>Total P</th>
+<th>Total A</th>
+<th>%</th>
+</tr>
+</thead>
+
+<tbody>
+
+<script>
+let students = [
+["1","101","Aman","Web Dev"],
+["2","102","Rahul","Web Dev"],
+["3","103","Sita","Web Dev"],
+["4","104","Ravi","Web Dev"],
+["5","105","Neha","Web Dev"],
+["6","106","Karan","Web Dev"],
+["7","107","Pooja","Web Dev"],
+["8","108","Amit","Web Dev"],
+["9","109","Rohit","Web Dev"],
+["10","110","Simran","Web Dev"]
+];
+
+for(let i=0;i<students.length;i++){
+document.write("<tr>");
+
+document.write("<td>"+students[i][0]+"</td>");
+document.write("<td>"+students[i][1]+"</td>");
+document.write("<td>"+students[i][2]+"</td>");
+document.write("<td>"+students[i][3]+"</td>");
+
+for(let j=0;j<10;j++){
+document.write("<td><input type='text' maxlength='1'></td>");
+}
+
+document.write("<td class='p'></td>");
+document.write("<td class='a'></td>");
+document.write("<td class='per'></td>");
+
+document.write("</tr>");
+}
+</script>
+
+</tbody>
+</table>
+
+<script src="attendence.js"></script>
+
+</body>
+</html>

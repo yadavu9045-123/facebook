@@ -1,0 +1,46 @@
+body{
+    font-family:Arial;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#007bff;
+}
+
+button{
+    padding:10px 20px;
+    background:#007bff;
+    color:white;
+    border:none;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    font-size:12px;
+}
+
+th,td{
+    border:1px solid #ccc;
+    text-align:center;
+    padding:5px;
+}
+
+th{
+    background:#007bff;
+    color:white;
+}
+
+input{
+    width:25px;
+    text-align:center;
+}
