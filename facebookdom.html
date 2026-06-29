@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login & Sign Up</title>
+    <link rel="stylesheet" href="facebookdom.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Login Form -->
+    <div class="box">
+
+        <h2>Login</h2>
+
+        <form onsubmit="login(); return false;">
+
+            <input type="email" id="loginEmail" placeholder="Email" required>
+
+            <input type="password" id="loginPassword" placeholder="Password" required>
+
+            <input type="submit" value="Login">
+
+        </form>
+
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="box">
+
+        <h2>Create New Account</h2>
+
+        <form onsubmit="signup(); return false;">
+
+            <input type="text" id="fname" placeholder="First Name" required>
+
+            <input type="text" id="lname" placeholder="Last Name" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <input type="password" id="password" placeholder="Password" required>
+
+            <label>Date of Birth</label>
+            <input type="date" id="dob" required>
+
+            <label>Gender</label>
+
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Custom"> Custom
+
+            <br><br>
+
+            <input type="submit" value="Sign Up">
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="facebook.js"></script>
+
+</body>
+</html>
